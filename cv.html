@@ -468,19 +468,13 @@ li a:hover {
             <button id="downloadButton" class="cv-btn">Download CV</button>
 
             <script>
-                document.getElementById("downloadButton").addEventListener("click", function() {
-                    // Créez un lien temporaire
-                    var link = document.createElement("a");
-                    link.href = "https://github.com/Fatmaabchouk/cv/blob/main/CV%20%2C%20abchouk.pdf"; // Remplacez par le chemin de votre CV
-                    link.download = "abchoukcv.pdf"; // Le nom par lequel le fichier sera téléchargé
-                    document.body.appendChild(link);
-        
-                    // Simule le clic sur le lien pour déclencher le téléchargement
-                    link.click();
-        
-                    // Supprime le lien temporaire
-                    document.body.removeChild(link);
-                });
+                function ouvrirCV() {
+                    // Remplacez l'URL avec le lien direct vers votre fichier PDF sur GitHub
+                    var url = "https://github.com/Fatmaabchouk/cv/blob/main/CV%20%2C%20abchouk.pdf";
+                    
+                    // Ouvrir le lien dans une nouvelle fenêtre ou onglet
+                    window.open(url, "_blank");
+                }
             </script>
             </div>
         </div>
