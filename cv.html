@@ -465,17 +465,16 @@ li a:hover {
                 <p>A Business Information System student. I consider my self a responsible and ordely person . I am looking foward for my first work experience .</p>
             <button name="contactButton" id ="contactButton">Contact Me </button>
             
-            <button id="downloadButton" class="cv-btn">Download CV</button>
-
+            <button id="downloadButton" class="cv-btn" onclick="ouvrirCV()">Download CV</button>
+     
             <script>
-                function ouvrirCV() {
-                    // Remplacez l'URL avec le lien direct vers votre fichier PDF sur GitHub
-                    var url = "https://github.com/Fatmaabchouk/cv/blob/main/CV%20%2C%20abchouk.pdf";
-                    
-                    // Ouvrir le lien dans une nouvelle fenêtre ou onglet
-                    window.open(url, "_blank");
-                }
+               function ouvrirCV() {
+    var url = "https://github.com/Fatmaabchouk/cv/blob/main/CV%20%2C%20abchouk.pdf";
+    window.location.href = url;
+}
+                
             </script>
+            
             </div>
         </div>
     </section>
